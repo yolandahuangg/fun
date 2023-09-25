@@ -23,7 +23,7 @@ const Header = () => {
                 </p>
 
                 <p className='absolute top-[62%] pl-[6%] font-sub text-sm md:text-md text-primary-400'>SOFTWARE DEVELOPER & DESIGNER</p>
-                <p className='absolute top-[66%] pl-[6%] font-title font-medium text-[55px] md:text-[80px]'>Yolanda Huang.</p>
+                <p className='absolute top-[66%] pl-[6%] font-title font-light text-[55px] md:text-[80px]'>Yolanda Huang.</p>
             </div>
 
             <SplashCanvas />

@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 
-const Splash = () => {
+const Splash = ({ mobile }) => {
     const splash = useGLTF('./splash/scene.gltf')
 
     return (
@@ -20,7 +20,7 @@ const Splash = () => {
             <pointLight intensity={1} />
             <primitive 
                 object={splash.scene}
-                scale={1.4}
+                scale={mobile ? 0.75 : 1.4}
                 position={[0, 0.5, 0]}
                 rotation={[0.2, 0 , -0.2]} 
             />
@@ -29,6 +29,22 @@ const Splash = () => {
 }
 
 const SplashCanvas = () => {
+    const [isMobile, setMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 1024px)");
+        setMobile(mediaQuery.matches);
+
+        const handleMedia = (event) => {
+            setMobile(mediaQuery.matches);
+        };
+        mediaQuery.addEventListener("change", handleMedia);
+
+        return () => {
+            mediaQuery.removeEventListener("change", handleMedia);
+        };
+    }, []);
+
     return (
         <Canvas shadows camera={{ position: [10, 15, 10], fov: 25 }} gl={{ preserveDrawingBuffer: true }}>
             <OrbitControls
@@ -37,7 +53,7 @@ const SplashCanvas = () => {
                 maxPolarAngle={Math.PI / 2}
                 minPolarAngle={Math.PI / 2}
             />
-            <Splash />
+            <Splash mobile={isMobile}/>
             <Preload all />
         </Canvas>
     )
