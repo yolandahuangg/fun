@@ -1,7 +1,17 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+import { OrbitControls, Preload, useGLTF, Html, useProgress } from '@react-three/drei';
 
+const Loader = () => {
+    const { progress } = useProgress();
+
+    return (
+        <Html>
+            <span className='canvas-loader' />
+            <p className="font-sub text-sm lg:text-base mt-0">{progress.toFixed(2)}%</p>
+        </Html>
+    )
+}
 
 const Splash = ({ mobile }) => {
     const splash = useGLTF('./splash/scene.gltf')
@@ -47,13 +57,16 @@ const SplashCanvas = () => {
 
     return (
         <Canvas shadows camera={{ position: [10, 15, 10], fov: 25 }} gl={{ preserveDrawingBuffer: true }}>
-            <OrbitControls
-                autoRotate
-                enableZoom={false}
-                maxPolarAngle={Math.PI / 2}
-                minPolarAngle={Math.PI / 2}
-            />
-            <Splash mobile={isMobile}/>
+            <Suspense fallback={<Loader />}>
+                <OrbitControls
+                    autoRotate
+                    enableZoom={false}
+                    maxPolarAngle={Math.PI / 2}
+                    minPolarAngle={Math.PI / 2}
+                />
+                <Splash mobile={isMobile}/>
+            </Suspense>
+            
             <Preload all />
         </Canvas>
     )

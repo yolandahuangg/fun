@@ -27,6 +27,7 @@ const Header = () => {
             </div>
 
             <SplashCanvas />
+            
         </section>
     )
 }
