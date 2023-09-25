@@ -5,7 +5,7 @@ const About = () => {
     return (
         <section className='About relative w-full h-screen mx-auto bg-primary-100'>
 
-            <ul className="list-none flex justify-center space-x-6">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <span class="relative flex justify-center items-center h-8 w-8 md:h-12 md:w-12">
@@ -13,9 +13,9 @@ const About = () => {
                             <span class="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-primary-100">
                                 <a href={site.link} target="_blank">
                                     <img 
-                                        src={site.icon1} alt={site.id}
-                                        onMouseOver={e => (e.currentTarget.src = site.icon2)}
-                                        onMouseOut={e => (e.currentTarget.src = site.icon1)}
+                                        src={site.icon2} alt={site.id}
+                                        onMouseOver={e => (e.currentTarget.src = site.icon1)}
+                                        onMouseOut={e => (e.currentTarget.src = site.icon2)}
                                     />
                                 </a>
                             </span>
