@@ -5,7 +5,7 @@ import menu from '../assets/menu.svg';
 import x from '../assets/x.svg';
 
 const Navbar = () => {
-    const [active, setActive] = useState('');
+    const [active, setActive] = useState('home');
     const [toggle, setToggle] = useState(false);
 
     return (
@@ -14,8 +14,8 @@ const Navbar = () => {
             <p className='flex font-title font-bold text-primary-100 text-md'>✦✦✦</p>
 
             <ul className='list-none hidden space-x-8 sm:flex font-sub text-primary-100 text-base'>
-                <Link to='/' className='cursor-pointer hover:underline hover:text-primary-300'
-                    onClick={() => {setActive(''); window.scrollTo({top:0, behavior:'smooth'})}}>HOME
+                <Link to='/' className={`${active === 'home' ? 'text-primary-300' : 'text-primary-100'} cursor-pointer hover:underline hover:text-primary-300`}
+                    onClick={() => {setActive('home'); window.scrollTo({top:0, behavior:'smooth'})}}>HOME
                 </Link>
                 {navLinks.map((link) => (
                     <li key={link.id}

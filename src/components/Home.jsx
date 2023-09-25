@@ -8,7 +8,7 @@ import Projects from '../components/Projects';
 
 const Home = () => {
     return (
-        <div className='Home'>
+        <div>
             <Navbar />
             <Header />
             <About />

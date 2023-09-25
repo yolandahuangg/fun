@@ -1,8 +1,11 @@
-import email from '../assets/email.png';
-import github from '../assets/github.png';
-import ins from '../assets/ins.png';
-import linkedin from '../assets/linkedin.png';
-import portfolio from '../assets/portfolio.png';
+import email1 from '../assets/email1.png';
+import email2 from '../assets/email2.png';
+import github1 from '../assets/github1.svg';
+import github2 from '../assets/github2.svg';
+import ins1 from '../assets/ins1.svg';
+import ins2 from '../assets/ins2.svg';
+import linkedin1 from '../assets/linkedin1.svg';
+import linkedin2 from '../assets/linkedin2.svg';
 
 export const navLinks = [
     {
@@ -27,27 +30,26 @@ export const contact = [
   {
     id: "email",
     link: "mailto:yolandahuang2004@gmail.com",
-    icon: email,
+    icon1: email1,
+    icon2: email2,
   },
   {
     id: "github",
     link: "https://github.com/yolandahuangg",
-    icon: github,
+    icon1: github1,
+    icon2: github2,
   },
   {
     id: "instagram",
     link: "https://www.instagram.com/yolandahuangg/",
-    icon: ins,
+    icon1: ins1,
+    icon2: ins2,
   },
   {
     id: "linkedin",
     link: "https://www.linkedin.com/in/yolandahuangg/",
-    icon: linkedin,
-  },
-  {
-    id: "portfolio",
-    link: "https://drive.google.com/file/d/1Ul0l2W_zRjYDRx8emAKl3SBAy9c0siaP/view?usp=drive_link",
-    icon: portfolio,
+    icon1: linkedin1,
+    icon2: linkedin2,
   },
 ];
   
