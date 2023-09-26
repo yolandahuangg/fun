@@ -1,5 +1,6 @@
 import React from "react";
 import { contact, about } from '../constants';
+import { TypeAnimation } from "react-type-animation";
 
 const About = () => {
     return (
@@ -25,12 +26,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <div className="px-[13%] py-10">
-                <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
-                <p className="font-title font-light text-lg md:text-[40px] pt-2">I am always interested in:</p>
-            </div>
-
-            <ul className="list-none flex justify-center space-x-6 md:space-x-16 pt-12 md:pt-[6rem]">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-10 md:py-[4rem]">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <span className="relative flex justify-center items-center h-8 w-8 md:h-12 md:w-12">
@@ -48,6 +44,39 @@ const About = () => {
                     </li>
                 ))}
             </ul>
+
+            <div className="px-[13%] pt-10 xl:pt-0">
+                <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
+                <p className="font-text text-sm md:text-md pt-2 pb-10">I am always interested in: &nbsp; &nbsp;</p>
+                <TypeAnimation 
+                    preRenderFirstString={true}
+                    sequence = {[
+                        'SOFTWARE DEVELOPMENT',
+                        2500,
+                        'FULL STACK DEVELOPMENT',
+                        2500,
+                        'UI/UX DESIGN',
+                        2500,
+                        'COFFEE!!!',
+                        2500,
+                        'WEB APPLICATIONS',
+                        2500,
+                        'PC AND SWITCH GAMING',
+                        2500,
+                        'ARTIFICIAL INTELLIGENCE',
+                        2500,
+                        'ROBOTICS',
+                        2500,
+                        'VIRTUAL REALITY',
+                        2500,
+                    ]}
+                    speed={20}
+                    className="flex font-title text-lg md:text-xl text-light text-primary-400 break-all"
+                    repeat={Infinity}
+                />
+            </div>
+
+            
 
         </div>
     )
