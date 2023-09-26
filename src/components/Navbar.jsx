@@ -36,8 +36,8 @@ const Navbar = () => {
 
             <div className={`${toggle ? 'flex' : 'hidden'} absolute top-20 right-2 bg-black shadow shadow-primary-500 p-5 min-w-[140px] z-10 rounded-md`}>
                 <ul className='list-none flex flex-1 flex-col justify-end space-y-2'>
-                    <Link to='/' className='font-sub text-primary-100 text-sm'
-                        onClick={() => {setToggle(!toggle); setActive('')}}>HOME
+                    <Link to='/' className={`${active === 'home' ? 'text-primary-300' : 'text-primary-100'} font-sub text-primary-100 text-sm`}
+                        onClick={() => {setToggle(!toggle); setActive('home'); window.scrollTo({top:0, behavior:'smooth'})}}>HOME
                     </Link>
                     {navLinks.map((link) => (
                         <li key={link.id}
