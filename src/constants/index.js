@@ -29,24 +29,28 @@ const navLinks = [
 const contact = [
   {
     id: "email",
+    num: 1,
     link: "mailto:yolandahuang2004@gmail.com",
     icon1: email1,
     icon2: email2,
   },
   {
     id: "github",
+    num: 2,
     link: "https://github.com/yolandahuangg",
     icon1: github1,
     icon2: github2,
   },
   {
     id: "instagram",
+    num: 3,
     link: "https://www.instagram.com/yolandahuangg/",
     icon1: ins1,
     icon2: ins2,
   },
   {
     id: "linkedin",
+    num: 4,
     link: "https://www.linkedin.com/in/yolandahuangg/",
     icon1: linkedin1,
     icon2: linkedin2,
@@ -55,7 +59,7 @@ const contact = [
 
 const about = [
   {
-    num: '1',
+    num: 1,
     info: [
       "Hello, my name is Yolanda.",
       "I am a 2A Software Engineering student at the University of Waterloo.",
@@ -63,21 +67,21 @@ const about = [
     ],
   },
   {
-    num: '2',
+    num: 2,
     info: [
       "I am passionate about web, app, game and full stack development.",
       "I am also commited towards ui/ux design and graphic arts.",
     ],
   },
   {
-    num: '3',
+    num: 3,
     info: [
       "My main languages include Javascript, C++, C#, Python, Scala and SQL.",
       "I also love ReactJS, ThreeJS, NodeJS and Tailwind.",
     ],
   },
   {
-    num: '4',
+    num: 4,
     info: [
       "As my history teacher used to say, encounters can lead to extordinary things.",
       "I am glad our paths crossed."
