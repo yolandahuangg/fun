@@ -3,21 +3,21 @@ import { contact, about } from '../constants';
 
 const About = () => {
     return (
-        <section className='relative flex flex-col w-full h-screen mx-auto bg-primary-100'>
+        <div className='relative flex flex-col w-full mx-auto py-16 bg-primary-100'>
 
-            <div className="flex justify-end pr-[8%] py-10">
+            <div className="flex justify-end pr-[8%] pb-10">
                 <p className="font-title font-light text-lg md:text-xl">ABOUT ME</p>
             </div>
 
-            <span className="relative flex items-stretch mx-[8%] h-5 bg-primary-200 opacity-80"/>
+            <span className="relative flex items-stretch mx-[8%] h-3 md:h-5 bg-primary-200 opacity-80"/>
 
-            <ul className="list-none flex justify-between px-[13%] py-10 md:space-x-16">
+            <ul className="list-none flex flex-col xl:flex-row justify-between px-[13%] py-10 xl:space-x-16">
                 {about.map((fact) => (
                     <li key={fact.num}>
-                        <ul className="list-none flex flex-col justify-start w-[15rem]">
+                        <ul className="list-none flex flex-col justify-start xl:w-[15rem]">
                             {fact.info.map((line) => (
                                 <li key={line}>
-                                    <p className="font-text text-base">{`${line}`}</p>
+                                    <p className="font-text text-sm md:text-base">{`${line}`}</p>
                                 </li>
                             ))}
                         </ul>
@@ -27,10 +27,10 @@ const About = () => {
 
             <div className="px-[13%] py-10">
                 <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
-                <p className="font-title font-light text-[40px] pt-2">I am always interested in:</p>
+                <p className="font-title font-light text-lg md:text-[40px] pt-2">I am always interested in:</p>
             </div>
 
-            <ul className="list-none flex justify-center space-x-6 md:space-x-16 pt-[6rem]">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16 pt-12 md:pt-[6rem]">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <span className="relative flex justify-center items-center h-8 w-8 md:h-12 md:w-12">
@@ -49,7 +49,7 @@ const About = () => {
                 ))}
             </ul>
 
-        </section>
+        </div>
     )
 }
 

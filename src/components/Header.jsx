@@ -3,7 +3,7 @@ import SplashCanvas from './Splash';
 
 const Header = () => {
     return (
-        <section className='relative w-full h-screen mx-auto bg-primary-100'>
+        <section className='relative w-full h-[95vh] mx-auto bg-primary-100'>
 
             <div>
                 <p className='absolute top-[8%] pl-[6%] font-title text-primary-400'>01.</p>
