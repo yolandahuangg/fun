@@ -8,9 +8,9 @@ const Wrapper = (Component, idname) => function Hoc() {
             initial='hidden'
             whileInView='show'
             viewport={{ once: true, amount: 0.25 }}
-            className="bg-primary-100 px-[8%]"
+            className="bg-primary-100 px-[8%] pb-36"
         >
-            <span className='hash-span pt-16' id={idname}>
+            <span className='hash-span pt-20' id={idname}>
                 &nbsp;
             </span>
             <Component />

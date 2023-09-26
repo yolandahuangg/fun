@@ -1,8 +1,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from 'framer-motion';
-import { contact, about } from '../constants';
 import Wrapper from './SectionWrap';
+import { contact, about } from '../constants';
 import { fadeIn, textVariant, zoomIn } from '../constants/motion';
 
 const About = () => {
