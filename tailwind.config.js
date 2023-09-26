@@ -7,8 +7,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'title': ['Cinzel', 'sans-serif'],
-        'sub': ['Montserrat', 'sans-serif'],
-        'text': ['Oxygen', 'sans-serif'],
+        'sub': ['Oxygen', 'sans-serif'],
+        'text': ['Montserrat', 'sans-serif'],
       },
       colors: {
         primary: {
@@ -20,7 +20,8 @@ module.exports = {
         },
       },
       fontSize: {
-        'lg': '40px',
+        'xl': '50px',
+        'lg': '30px',
         'md': '18px',
         'base': '16px',
         'sm': '14px',

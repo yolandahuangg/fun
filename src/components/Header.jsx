@@ -7,14 +7,14 @@ const Header = () => {
 
             <div>
                 <p className='absolute top-[8%] pl-[6%] font-title text-primary-400'>01.</p>
-                <p className='absolute top-[11%] pl-[8%] font-sub text-[10px] md:text-sm'><q>
-                    if you look the right way, <br/>
+                <p className='absolute top-[11%] pl-[8%] font-text text-[10px] md:text-sm'><q>
+                    If you look the right way, <br/>
                     you can see that <br/>
                     the whole world is a garden.
                 </q></p>
 
                 <p className='absolute top-[25%] pl-[6%] font-title text-primary-400'>02.</p>
-                <p className='absolute top-[28%] pl-[8%] font-sub text-[10px] md:text-sm'>
+                <p className='absolute top-[28%] pl-[8%] font-text text-[10px] md:text-sm'>
                     if &#40; sad&#40; &#41; === true &#41; &#123; <br/>
                     &nbsp; &nbsp; sad&#40; &#41;.stop&#40; &#41; ; <br/>
                     &nbsp; &nbsp; eatAlot&#40; &#41; ; <br/>

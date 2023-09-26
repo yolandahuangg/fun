@@ -7,7 +7,7 @@ import ins2 from '../assets/ins2.svg';
 import linkedin1 from '../assets/linkedin1.svg';
 import linkedin2 from '../assets/linkedin2.svg';
 
-export const navLinks = [
+const navLinks = [
     {
       id: "about",
       title: "ABOUT",
@@ -26,7 +26,7 @@ export const navLinks = [
     },
 ];
 
-export const contact = [
+const contact = [
   {
     id: "email",
     link: "mailto:yolandahuang2004@gmail.com",
@@ -52,118 +52,74 @@ export const contact = [
     icon2: linkedin2,
   },
 ];
-  
-//   const services = [
-//     {
-//       title: "Web Developer",
-//       icon: web,
-//     },
-//     {
-//       title: "React Native Developer",
-//       icon: mobile,
-//     },
-//     {
-//       title: "Backend Developer",
-//       icon: backend,
-//     },
-//     {
-//       title: "Content Creator",
-//       icon: creator,
-//     },
-//   ];
-  
-//   const technologies = [
-//     {
-//       name: "HTML 5",
-//       icon: html,
-//     },
-//     {
-//       name: "CSS 3",
-//       icon: css,
-//     },
-//     {
-//       name: "JavaScript",
-//       icon: javascript,
-//     },
-//     {
-//       name: "TypeScript",
-//       icon: typescript,
-//     },
-//     {
-//       name: "React JS",
-//       icon: reactjs,
-//     },
-//     {
-//       name: "Redux Toolkit",
-//       icon: redux,
-//     },
-//     {
-//       name: "Tailwind CSS",
-//       icon: tailwind,
-//     },
-//     {
-//       name: "Node JS",
-//       icon: nodejs,
-//     },
-//     {
-//       name: "MongoDB",
-//       icon: mongodb,
-//     },
-//     {
-//       name: "Three JS",
-//       icon: threejs,
-//     },
-//     {
-//       name: "Git",
-//       icon: git,
-//     },
-//     {
-//       name: "Figma",
-//       icon: figma,
-//     },
-//   ];
-  
-//   const experiences = [
-//     {
-//       title: "React.js Developer",
-//       company_name: "Starbucks",
-//       icon: starbucks,
-//       iconBg: "#383E56",
-//       date: "March 2020 - April 2021",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "React Native Developer",
-//       company_name: "Tesla",
-//       icon: tesla,
-//       iconBg: "#E6DEDD",
-//       date: "Jan 2021 - Feb 2022",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "Web Developer",
-//       company_name: "Shopify",
-//       icon: shopify,
-//       iconBg: "#383E56",
-//       date: "Jan 2022 - Jan 2023",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//   ];
+
+const about = [
+  {
+    num: '1',
+    info: [
+      "Hello, my name is Yolanda.",
+      "I am a 2A Software Engineering student at the University of Waterloo.",
+      "GPA 3.9 / 4.0",
+    ],
+  },
+  {
+    num: '2',
+    info: [
+      "I am passionate about web, app, game and full stack development.",
+      "I am also commited towards ui/ux design and graphic arts.",
+    ],
+  },
+  {
+    num: '3',
+    info: [
+      "My main languages include Javascript, C++, C#, Python, Scala and SQL.",
+      "I also love ReactJS, ThreeJS, NodeJS and Tailwind.",
+    ],
+  },
+  {
+    num: '4',
+    info: [
+      "As my history teacher used to say, encounters can lead to extordinary things.",
+      "I am glad our paths crossed."
+    ],
+  },
+];
+
+const experiences = [
+  {
+    title: "University Research Assistant",
+    company: "Social and Intelligent Robotics Research Lab",
+    icon: '',
+    iconBg: '',
+    date: "September 2023 - Current",
+    points: [
+      "",
+      "",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company: "GH Capital Corporation",
+    icon: '',
+    iconBg: '',
+    date: "May 2023 - August 2023",
+    points: [
+      "",
+      "",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company: "UW Orbital",
+    icon: '',
+    iconBg: '',
+    date: "Sept 2022 - May 2023",
+    points: [
+      "",
+      "",
+    ],
+  },
+];
   
 //   const projects = [
 //     {
@@ -231,4 +187,4 @@ export const contact = [
 //     },
 //   ];
   
-//   export { services, technologies, experiences, projects };
+export { navLinks, contact, about, experiences };
