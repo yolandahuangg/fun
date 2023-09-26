@@ -53,7 +53,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <motion.div className="pt-10 xl:pt-0" variants={fadeIn('', 'spring', 0.8, 1.5)}>
+            <motion.div className="pt-10 xl:pt-0 px-[8%]" variants={fadeIn('', 'spring', 0.8, 1.5)}>
                 <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
                 <p className="font-text text-sm md:text-md pt-2 pb-10">I am always interested in: &nbsp; &nbsp;</p>
                 <TypeAnimation 
