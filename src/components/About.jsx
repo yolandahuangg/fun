@@ -5,11 +5,11 @@ const About = () => {
     return (
         <div className='relative flex flex-col w-full mx-auto py-16 bg-primary-100'>
 
-            <div className="flex justify-end pr-[8%] pb-10">
+            <div className="flex justify-end pr-[8%]">
                 <p className="font-title font-light text-lg md:text-xl">ABOUT ME</p>
             </div>
 
-            <span className="relative flex items-stretch mx-[8%] h-3 md:h-5 bg-primary-200 opacity-80"/>
+            <span className="relative flex items-stretch mx-[8%] mb-8 pt-10 h-3 md:h-5 bg-primary-200 opacity-80"/>
 
             <ul className="list-none flex flex-col xl:flex-row justify-between px-[13%] py-10 xl:space-x-16">
                 {about.map((fact) => (
