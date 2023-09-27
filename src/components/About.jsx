@@ -9,14 +9,15 @@ const About = () => {
     return (
         <div className='relative flex flex-col w-full mx-auto bg-primary-100'>
 
-            <motion.div variants={textVariant()}>
-                <p className="font-title font-light text-lg md:text-xl flex justify-end">ABOUT ME.</p>
+            <motion.div variants={textVariant()} className="flex flex-col items-end">
+                <p className="font-sub text-sm md:text-md text-primary-400 justify-end">OVERVIEW</p>
+                <p className="font-title font-normal text-lg md:text-xl">ABOUT ME.</p>
             </motion.div>
 
-            <motion.div variants={fadeIn('', 'spring', 0.5, 1.5)}>
+            <motion.div variants={fadeIn('left', 'spring', 0.3, 1.5)}>
                 <span className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-primary-200 opacity-80"/>
 
-                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-10 xl:space-x-16">
+                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-10 space-y-4 xl:space-y-0 xl:space-x-16">
                     {about.map((fact) => (
                         <li key={fact.num}>
                             <ul className="list-none flex flex-col justify-start xl:w-[15rem]">
@@ -53,7 +54,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <motion.div className="pt-10 xl:pt-0 px-[8%]" variants={fadeIn('', 'spring', 0.8, 1.5)}>
+            <motion.div className="pt-10 xl:pt-0 px-[8%]" variants={fadeIn('right', 'spring', 0.8, 1.5)}>
                 <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
                 <p className="font-text text-sm md:text-md pt-2 pb-10">I am always interested in: &nbsp; &nbsp;</p>
                 <TypeAnimation 
