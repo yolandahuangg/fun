@@ -6,6 +6,9 @@ import ins1 from '../assets/ins1.svg';
 import ins2 from '../assets/ins2.svg';
 import linkedin1 from '../assets/linkedin1.svg';
 import linkedin2 from '../assets/linkedin2.svg';
+import gh from '../assets/gh.jpeg';
+import orbital from '../assets/orbital.jpeg';
+import ura from '../assets/ura.png';
 
 const navLinks = [
     {
@@ -93,34 +96,34 @@ const experiences = [
   {
     title: "University Research Assistant",
     company: "Social and Intelligent Robotics Research Lab",
-    icon: '',
-    iconBg: '',
+    icon: ura,
+    iconBg: '#ffffff',
     date: "September 2023 - Current",
     points: [
-      "",
-      "",
+      "Researching social robots under Professor Kerstin Dautenhahn",
+      "Developing the Furhat Robot used for mental health support and human-computer interaction experiments",
     ],
   },
   {
     title: "Software Developer",
     company: "GH Capital Corporation",
-    icon: '',
-    iconBg: '',
+    icon: gh,
+    iconBg: '#ffffff',
     date: "May 2023 - August 2023",
     points: [
-      "",
-      "",
+      "Updated the corporate website with React and Chakura UI visually hidden to meet AODA compliance",
+      "Wrote robust code with Tailwind to ensure mobile responsiveness and smooth animated transitions",
     ],
   },
   {
     title: "Fullstack Developer",
     company: "UW Orbital",
-    icon: '',
-    iconBg: '',
+    icon: orbital,
+    iconBg: '#ffffff',
     date: "Sept 2022 - May 2023",
     points: [
-      "",
-      "",
+      "In charge of ARO web app UI design and map API development",
+      "Integrated web app backend with FirebaseDB and Cloud Functions to ensure data security",
     ],
   },
 ];

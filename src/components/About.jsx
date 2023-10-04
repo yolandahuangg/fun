@@ -1,6 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from 'framer-motion';
+
 import Wrapper from './SectionWrap';
 import { contact, about } from '../constants';
 import { fadeIn, textVariant, zoomIn } from '../constants/motion';
@@ -60,23 +61,23 @@ const About = () => {
                 <TypeAnimation 
                     preRenderFirstString={true}
                     sequence = {[
-                        'SOFTWARE DEVELOPMENT',
+                        '✦ SOFTWARE DEVELOPMENT',
                         2500,
-                        'FULL STACK DEVELOPMENT',
+                        '✦ FULL STACK DEVELOPMENT',
                         2500,
-                        'UI/UX DESIGN',
+                        '✦ UI/UX DESIGN',
                         2500,
-                        'COFFEE!!!',
+                        '✦ COFFEE!!!',
                         2500,
-                        'WEB APPLICATIONS',
+                        '✦ WEB APPLICATIONS',
                         2500,
-                        'PC AND SWITCH GAMING',
+                        '✦ PC AND SWITCH GAMING',
                         2500,
-                        'ARTIFICIAL INTELLIGENCE',
+                        '✦ ARTIFICIAL INTELLIGENCE',
                         2500,
-                        'ROBOTICS',
+                        '✦ ROBOTICS',
                         2500,
-                        'VIRTUAL REALITY',
+                        '✦ VIRTUAL REALITY',
                         2500,
                     ]}
                     speed={20}

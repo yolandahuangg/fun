@@ -1,4 +1,5 @@
 import React from 'react';
+
 import SplashCanvas from './Splash';
 
 const Header = () => {
