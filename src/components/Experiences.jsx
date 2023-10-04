@@ -32,7 +32,7 @@ const Card = ({ experience }) => {
             }
             >
             <div>
-                <h3 className='font-title text-primary-200 text-[24px] font-normal'>{experience.title}</h3>
+                <h3 className='font-title text-primary-200 text-md md:text-[24px] font-normal'>{experience.title}</h3>
                 <p
                 className='font-sub text-[16px] font-semibold text-primary-300'
                 style={{ margin: 0 }}
@@ -41,11 +41,11 @@ const Card = ({ experience }) => {
                 </p>
             </div>
 
-            <ul className='mt-6 list-disc ml-5 space-y-2 pb-2'>
+            <ul className='mt-6 list-disc ml-5 space-y-2 md:pb-2'>
                 {experience.points.map((point, index) => (
                 <li
                     key={`experience-point-${index}`}
-                    className='font-text text-primary-200 text-[14px] pl-1 tracking-wider'
+                    className='font-text text-primary-200 text-xs md:text-base pl-1 tracking-wider'
                 >
                     {point}
                 </li>
@@ -69,7 +69,7 @@ const Experiences = () => {
                 variants={fadeIn('left', 'spring', 0.3, 1.5)}>
             </motion.span>
 
-            <div className='mt-10 flex flex-col'>
+            <div className='mt-6 flex flex-col'>
                 <VerticalTimeline lineColor="black" className="vertical-timeline-custom-line">
                     {experiences.map((experience, index) => (
                         <Card

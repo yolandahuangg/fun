@@ -33,15 +33,15 @@ const About = () => {
                 </ul>
             </motion.div>
 
-            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-10 md:py-[4rem]">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-4 md:py-[4rem]">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <motion.span 
                             variants={zoomIn(0.5*site.num, 1)}
-                            className="relative flex justify-center items-center h-8 w-8 md:h-12 md:w-12"
+                            className="relative flex justify-center items-center h-8 w-8 md:h-16 md:w-16"
                         >
-                            <span className="animate-ping absolute inline-flex h-5 w-5 md:h-8 md:w-8 rounded-full bg-primary-500 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-8 w-8 md:h-12 md:w-12 bg-primary-100">
+                            <span className="animate-ping absolute inline-flex h-5 w-5 md:h-10 md:w-10 rounded-full bg-primary-500 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-8 w-8 md:h-16 md:w-16 bg-primary-100">
                                 <a href={site.link} target="_blank" rel="noreferrer">
                                     <img 
                                         src={site.icon2} alt={site.id}
