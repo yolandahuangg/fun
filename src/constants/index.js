@@ -99,9 +99,10 @@ const experiences = [
     icon: ura,
     iconBg: '#ffffff',
     date: "September 2023 - Current",
+    link: "https://uwaterloo.ca/social-intelligent-robotics-research-lab/",
     points: [
-      "Researching social robots under Professor Kerstin Dautenhahn",
-      "Developing the Furhat Robot used for mental health support and human-computer interaction experiments",
+      "Researching social robots for human-computer interaction under Professor Kerstin Dautenhahn",
+      "Developing the Furhat Robot vision control system using its Kotlin and Python SDK",
     ],
   },
   {
@@ -110,9 +111,10 @@ const experiences = [
     icon: gh,
     iconBg: '#ffffff',
     date: "May 2023 - August 2023",
+    link: "https://www.graydonhallapartments.com/",
     points: [
       "Updated the corporate website with React and Chakura UI visually hidden to meet AODA compliance",
-      "Wrote robust code with Tailwind to ensure mobile responsiveness and smooth animated transitions",
+      "Wrote robust code with Tailwind to ensure mobile responsiveness and smooth page transitions",
     ],
   },
   {
@@ -121,6 +123,7 @@ const experiences = [
     icon: orbital,
     iconBg: '#ffffff',
     date: "Sept 2022 - May 2023",
+    link: "https://www.uworbital.com/",
     points: [
       "In charge of ARO web app UI design and map API development",
       "Integrated web app backend with FirebaseDB and Cloud Functions to ensure data security",

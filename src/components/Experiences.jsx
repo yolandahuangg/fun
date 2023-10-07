@@ -22,7 +22,7 @@ const Card = ({ experience }) => {
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             icon={
-                <div className='flex justify-center items-center w-full h-full'>
+                <div className='flex justify-center items-center w-full h-full hover:cursor-pointer'>
                 <img
                     src={experience.icon}
                     alt={experience.company}
@@ -30,9 +30,10 @@ const Card = ({ experience }) => {
                 />
                 </div>
             }
+            iconOnClick={() => window.open(experience.link, "_blank")}
             >
             <div>
-                <h3 className='font-title text-primary-200 text-md md:text-[24px] font-normal'>{experience.title}</h3>
+                <h3 className='font-sub text-primary-200 text-md md:text-[22px] font-normal'>{experience.title}</h3>
                 <p
                 className='font-sub text-[16px] font-semibold text-primary-300'
                 style={{ margin: 0 }}
@@ -45,7 +46,7 @@ const Card = ({ experience }) => {
                 {experience.points.map((point, index) => (
                 <li
                     key={`experience-point-${index}`}
-                    className='font-text text-primary-200 text-xs md:text-base pl-1 tracking-wider'
+                    className='font-text text-primary-200 text-xs md:text-sm pl-1 tracking-wider'
                 >
                     {point}
                 </li>
