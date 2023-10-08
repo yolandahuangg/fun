@@ -66,7 +66,7 @@ const Experiences = () => {
             </motion.div>
       
             <motion.span 
-                className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-primary-200"
+                className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-transparent border-y-[1px] border-primary-400"
                 variants={fadeIn('left', 'spring', 0.3, 1.5)}>
             </motion.span>
 

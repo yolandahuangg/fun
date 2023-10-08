@@ -16,7 +16,7 @@ const About = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('left', 'spring', 0.3, 1.5)}>
-                <span className="relative flex items-stretch mb-8 pt-10 bg-primary-200"/>
+                <span className="relative flex items-stretch mb-8 pt-10 bg-transparent border-y-[1px] border-primary-400"/>
 
                 <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0 xl:space-x-16">
                     {about.map((fact) => (
@@ -61,23 +61,23 @@ const About = () => {
                 <TypeAnimation 
                     preRenderFirstString={true}
                     sequence = {[
-                        '✦ SOFTWARE DEVELOPMENT',
+                        '⬩ SOFTWARE DEVELOPMENT',
                         2500,
-                        '✦ FULL STACK DEVELOPMENT',
+                        '⬩ FULL STACK DEVELOPMENT',
                         2500,
-                        '✦ UI/UX DESIGN',
+                        '⬩ UI/UX DESIGN',
                         2500,
-                        '✦ COFFEE!!!',
+                        '⬩ COFFEE!!!',
                         2500,
-                        '✦ WEB APPLICATIONS',
+                        '⬩ WEB APPLICATIONS',
                         2500,
-                        '✦ PC AND SWITCH GAMING',
+                        '⬩ PC AND SWITCH GAMING',
                         2500,
-                        '✦ ARTIFICIAL INTELLIGENCE',
+                        '⬩ ARTIFICIAL INTELLIGENCE',
                         2500,
-                        '✦ ROBOTICS',
+                        '⬩ ROBOTICS',
                         2500,
-                        '✦ VIRTUAL REALITY',
+                        '⬩ VIRTUAL REALITY',
                         2500,
                     ]}
                     speed={20}
@@ -85,6 +85,9 @@ const About = () => {
                     repeat={Infinity}
                 />
             </motion.div>
+
+            <p className="absolute hidden xl:flex w-2 text-lg top-[78%] ml-[87%]">❤☕︎☕︎☕︎❤</p>
+            <span className="absolute hidden xl:flex top-[82%] ml-[92%] h-[15rem] w-[2px] bg-primary-400" />
 
         </div>
     )
