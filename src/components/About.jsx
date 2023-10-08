@@ -8,7 +8,7 @@ import { fadeIn, textVariant, zoomIn } from '../constants/motion';
 
 const About = () => {
     return (
-        <div className='relative flex flex-col w-full mx-auto bg-primary-100'>
+        <div className='relative flex flex-col w-full mx-auto'>
 
             <motion.div variants={textVariant()} className="flex flex-col items-end">
                 <p className="font-sub text-sm md:text-md text-primary-400 justify-end">OVERVIEW</p>
@@ -16,9 +16,9 @@ const About = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('left', 'spring', 0.3, 1.5)}>
-                <span className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-primary-200 opacity-80"/>
+                <span className="relative flex items-stretch mb-8 pt-10 bg-primary-200"/>
 
-                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-10 space-y-4 xl:space-y-0 xl:space-x-16">
+                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0 xl:space-x-16">
                     {about.map((fact) => (
                         <li key={fact.num}>
                             <ul className="list-none flex flex-col justify-start xl:w-[15rem]">
@@ -33,7 +33,7 @@ const About = () => {
                 </ul>
             </motion.div>
 
-            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-4 md:py-[4rem]">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-6 md:py-[3rem]">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <motion.span 

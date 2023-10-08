@@ -6,6 +6,8 @@ const Header = () => {
     return (
         <section className='relative w-full h-[95vh] mx-auto bg-primary-100'>
 
+            <SplashCanvas />
+
             <div>
                 <p className='absolute top-[8%] pl-[6%] font-title text-primary-400'>01.</p>
                 <p className='absolute top-[11%] pl-[8%] font-text text-[10px] md:text-sm'><q>
@@ -25,10 +27,22 @@ const Header = () => {
 
                 <p className='absolute top-[62%] xl:top-[66%] pl-[6%] font-sub text-sm md:text-md text-primary-400'>SOFTWARE DEVELOPER & DESIGNER</p>
                 <p className='absolute top-[66%] xl:top-[70%] pl-[6%] font-title font-light text-[55px] md:text-[80px]'>Yolanda Huang.</p>
+
+                <div 
+                    className='absolute group top-[78%] ml-[87%] flex justify-center items-center hover:cursor-pointer'
+                    onClick={() => document.getElementById("about").scrollIntoView({behavior: "smooth"})}
+                >
+                    <span className="absolute inline-flex rounded-full h-10 w-10 lg:h-24 lg:w-24 bg-transparent border-[1px] md:border-2 border-primary-400 group-hover:bg-primary-400 group-hover:opacity-60" />
+                    <p className='relative font-text font-extralight text-lg lg:text-[55px] group-hover:text-primary-100'>↓</p>
+                </div>
+
+                <div className='absolute top-[25%] ml-[85%] flex flex-col justify-center items-center'>
+                    <span className='absolute hidden xl:flex h-[15rem] w-[4px] bg-black' />  
+                    <p className='relative hidden xl:flex -rotate-90 font-sub text-md text-primary-400 w-52 top-60'>I MAKE ART COME ALIVE</p>
+                </div>
+                <span className='absolute hidden xl:flex h-[4px] w-32 bg-black top-[85%] ml-[70%]' />
             </div>
 
-            <SplashCanvas />
-            
         </section>
     )
 }

@@ -58,7 +58,7 @@ const Card = ({ experience }) => {
 
 const Experiences = () => {
     return (
-        <div className='relative flex flex-col w-full mx-auto bg-primary-100'>
+        <div className='relative flex flex-col w-full mx-auto'>
 
              <motion.div variants={textVariant()} className="flex flex-col items-center">
                 <p className="font-sub text-sm md:text-md text-primary-400 justify-end">PAST WORK</p>
@@ -66,11 +66,11 @@ const Experiences = () => {
             </motion.div>
       
             <motion.span 
-                className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-primary-200 opacity-80"
+                className="relative flex items-stretch mb-8 pt-10 h-3 md:h-5 bg-primary-200"
                 variants={fadeIn('left', 'spring', 0.3, 1.5)}>
             </motion.span>
 
-            <div className='mt-6 flex flex-col'>
+            <div className='md:mt-6 flex flex-col'>
                 <VerticalTimeline lineColor="black" className="vertical-timeline-custom-line">
                     {experiences.map((experience, index) => (
                         <Card
