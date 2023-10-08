@@ -70,8 +70,8 @@ const Experiences = () => {
                 variants={fadeIn('left', 'spring', 0.3, 1.5)}>
             </motion.span>
 
-            <div className='md:mt-6 flex flex-col'>
-                <VerticalTimeline lineColor="black" className="vertical-timeline-custom-line">
+            <div className='md:mt-5 flex flex-col'>
+                <VerticalTimeline lineColor="#e6dfd9" className="vertical-timeline-custom-line">
                     {experiences.map((experience, index) => (
                         <Card
                         key={`experience-${index}`}

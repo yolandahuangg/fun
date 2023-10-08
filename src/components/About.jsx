@@ -11,7 +11,7 @@ const About = () => {
         <div className='relative flex flex-col w-full mx-auto'>
 
             <motion.div variants={textVariant()} className="flex flex-col items-end">
-                <p className="font-sub text-sm md:text-md text-primary-400 justify-end">OVERVIEW</p>
+                <p className="font-sub text-sm md:text-md text-primary-400">OVERVIEW</p>
                 <p className="font-title font-normal text-lg md:text-xl">ABOUT ME.</p>
             </motion.div>
 
@@ -81,7 +81,7 @@ const About = () => {
                         2500,
                     ]}
                     speed={20}
-                    className="flex font-title text-lg md:text-xl text-light text-primary-400 break-all"
+                    className="flex font-text font-thin text-lg md:text-xl text-light text-primary-400 break-all"
                     repeat={Infinity}
                 />
             </motion.div>
