@@ -21,6 +21,7 @@ const About = () => {
                 <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0 xl:space-x-16">
                     {about.map((fact) => (
                         <li key={fact.num}>
+                            <p className="font-title w-fit bg-primary-200">{fact.num}</p>
                             <ul className="list-none flex flex-col justify-start xl:w-[15rem]">
                                 {fact.info.map((line) => (
                                     <li key={line}>
@@ -67,7 +68,7 @@ const About = () => {
                         2500,
                         '⬩ UI/UX DESIGN',
                         2500,
-                        '⬩ COFFEE!!!',
+                        '⬩ COFFEE!!! LATTE!!!',
                         2500,
                         '⬩ WEB APPLICATIONS',
                         2500,

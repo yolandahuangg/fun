@@ -62,7 +62,7 @@ const contact = [
 
 const about = [
   {
-    num: 1,
+    num: "☕︎ 01. ☕︎",
     info: [
       "Hello, my name is Yolanda.",
       "I am a 2A Software Engineering student at the University of Waterloo.",
@@ -70,21 +70,21 @@ const about = [
     ],
   },
   {
-    num: 2,
+    num: "☕︎ 02. ☕︎",
     info: [
       "I am passionate about web, app, game and full stack development.",
       "I am also commited towards ui/ux design and graphic arts.",
     ],
   },
   {
-    num: 3,
+    num: "☕︎ 03. ☕︎",
     info: [
       "My main languages include Javascript, C++, C#, Python, Scala and SQL.",
       "I also love ReactJS, ThreeJS, NodeJS and Tailwind.",
     ],
   },
   {
-    num: 4,
+    num: "☕︎ 04. ☕︎",
     info: [
       "As my history teacher used to say, encounters can lead to extordinary things.",
       "I am glad our paths crossed."
@@ -130,71 +130,5 @@ const experiences = [
     ],
   },
 ];
-  
-//   const projects = [
-//     {
-//       name: "Car Rent",
-//       description:
-//         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-//       tags: [
-//         {
-//           name: "react",
-//           color: "blue-text-gradient",
-//         },
-//         {
-//           name: "mongodb",
-//           color: "green-text-gradient",
-//         },
-//         {
-//           name: "tailwind",
-//           color: "pink-text-gradient",
-//         },
-//       ],
-//       image: carrent,
-//       source_code_link: "https://github.com/",
-//     },
-//     {
-//       name: "Job IT",
-//       description:
-//         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-//       tags: [
-//         {
-//           name: "react",
-//           color: "blue-text-gradient",
-//         },
-//         {
-//           name: "restapi",
-//           color: "green-text-gradient",
-//         },
-//         {
-//           name: "scss",
-//           color: "pink-text-gradient",
-//         },
-//       ],
-//       image: jobit,
-//       source_code_link: "https://github.com/",
-//     },
-//     {
-//       name: "Trip Guide",
-//       description:
-//         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-//       tags: [
-//         {
-//           name: "nextjs",
-//           color: "blue-text-gradient",
-//         },
-//         {
-//           name: "supabase",
-//           color: "green-text-gradient",
-//         },
-//         {
-//           name: "css",
-//           color: "pink-text-gradient",
-//         },
-//       ],
-//       image: tripguide,
-//       source_code_link: "https://github.com/",
-//     },
-//   ];
   
 export { navLinks, contact, about, experiences };

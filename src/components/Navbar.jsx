@@ -9,7 +9,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <div className='Navbar sticky top-0 z-20 w-full flex px-6 md:px-[6%] py-5 justify-between bg-black shadow shadow-primary-500'>
+        <div className='Navbar sticky top-0 z-20 w-full h-[7vh] flex px-6 md:px-[6%] py-5 justify-between bg-black shadow shadow-primary-500'>
 
             <p className='flex font-title font-bold text-primary-100 text-md'>✦✦✦</p>
 

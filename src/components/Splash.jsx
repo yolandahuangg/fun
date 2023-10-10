@@ -30,7 +30,7 @@ const Splash = ({ mobile }) => {
             <pointLight intensity={1} />
             <primitive 
                 object={splash.scene}
-                scale={mobile ? 0.75 : 1.4}
+                scale={mobile ? 0.75 : 1.5}
                 position={[0, 0.5, 0]}
                 rotation={[0.2, 0 , -0.2]} 
             />
