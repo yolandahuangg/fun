@@ -18,14 +18,14 @@ const About = () => {
             <motion.div variants={fadeIn('left', 'spring', 0.3, 1.5)}>
                 <span className="relative flex items-stretch mb-8 pt-10 bg-transparent border-y-[1px] border-primary-400"/>
 
-                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0 xl:space-x-16">
+                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0">
                     {about.map((fact) => (
                         <li key={fact.num}>
                             <p className="font-title w-fit bg-primary-200">{fact.num}</p>
-                            <ul className="list-none flex flex-col justify-start xl:w-[15rem]">
+                            <ul className="list-none flex flex-col justify-start">
                                 {fact.info.map((line) => (
                                     <li key={line}>
-                                        <p className="font-text text-sm md:text-base">{`${line}`}</p>
+                                        <p className="font-text text-sm md:text-base xl:w-[14vw]">{`${line}`}</p>
                                     </li>
                                 ))}
                             </ul>
