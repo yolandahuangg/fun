@@ -25,12 +25,12 @@ const Projects = () => {
 
                 <motion.div className="flex flex-col xl:flex-row justify-end space-y-6 xl:space-y-0" variants={fadeIn('', 'spring', 0.8, 1.5)}>
                     <button
-                        className="font-text font-thin text-lg md:text-[45px] border-[1px] md:border-2 border-primary-400 rounded-full w-full xl:w-80 hover:bg-primary-400 opacity-60 transition ease-in-out delay-100 hover:text-primary-100"
+                        className="font-text font-extralight text-lg md:text-[45px] border-[1px] md:border-2 border-primary-400 rounded-full w-full xl:w-80 hover:bg-primary-400 opacity-60 transition ease-in-out delay-100 hover:text-primary-100"
                         onClick={() => window.open(resume, "_blank")}
                     >RESUME</button>
 
                     <button
-                        className="font-text font-thin text-lg md:text-[45px] border-[1px] md:border-2 border-primary-400 rounded-full w-full xl:w-[40rem] hover:bg-primary-400 opacity-60 transition ease-in-out delay-100 hover:text-primary-100"
+                        className="font-text font-extralight text-lg md:text-[45px] border-[1px] md:border-2 border-primary-400 rounded-full w-full xl:w-[40rem] hover:bg-primary-400 opacity-60 transition ease-in-out delay-100 hover:text-primary-100"
                         onClick={() => window.open("https://drive.google.com/file/d/1yL7f4t5I0tIHK_8zrqnmolO7PGooX_TH/view?usp=drive_link", "_blank")}
                     >DESIGN PORTFOLIO</button>
                 </motion.div>

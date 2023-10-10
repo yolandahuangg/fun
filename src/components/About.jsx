@@ -39,10 +39,10 @@ const About = () => {
                     <li key={site.id}>
                         <motion.span 
                             variants={zoomIn(0.5*site.num, 1)}
-                            className="relative flex justify-center items-center h-8 w-8 md:h-16 md:w-16"
+                            className="relative flex justify-center items-center h-10 w-10 md:h-16 md:w-16"
                         >
-                            <span className="animate-ping absolute inline-flex h-5 w-5 md:h-10 md:w-10 rounded-full bg-primary-500 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-8 w-8 md:h-16 md:w-16 bg-primary-100">
+                            <span className="animate-ping absolute inline-flex h-[1.6rem] w-[1.6rem] md:h-10 md:w-10 rounded-full bg-primary-500 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-10 w-10 md:h-16 md:w-16 bg-primary-100">
                                 <a href={site.link} target="_blank" rel="noreferrer">
                                     <img 
                                         src={site.icon2} alt={site.id}
@@ -82,7 +82,7 @@ const About = () => {
                         2500,
                     ]}
                     speed={20}
-                    className="flex font-text font-thin text-lg md:text-xl text-light text-primary-400 break-all"
+                    className="flex font-text font-extralight text-lg md:text-xl text-light text-primary-400 break-all"
                     repeat={Infinity}
                 />
             </motion.div>
