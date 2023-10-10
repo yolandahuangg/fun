@@ -18,7 +18,7 @@ const About = () => {
             <motion.div variants={fadeIn('left', 'spring', 0.3, 1.5)}>
                 <span className="relative flex items-stretch mb-8 pt-10 bg-transparent border-y-[1px] border-primary-400"/>
 
-                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-8 md:py-10 space-y-4 xl:space-y-0">
+                <ul className="list-none flex flex-col xl:flex-row justify-between px-[8%] py-4 md:py-10 space-y-4 xl:space-y-0">
                     {about.map((fact) => (
                         <li key={fact.num}>
                             <p className="font-title w-fit bg-primary-200">{fact.num}</p>
@@ -34,7 +34,7 @@ const About = () => {
                 </ul>
             </motion.div>
 
-            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-6 md:py-[3rem]">
+            <ul className="list-none flex justify-center space-x-6 md:space-x-16 py-10 md:py-[3rem]">
                 {contact.map((site) => (
                     <li key={site.id}>
                         <motion.span 
@@ -56,7 +56,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <motion.div className="pt-10 xl:pt-0 px-[8%]" variants={fadeIn('right', 'spring', 0.8, 1.5)}>
+            <motion.div className="pt-4 xl:pt-0 px-[8%]" variants={fadeIn('right', 'spring', 0.8, 1.5)}>
                 <p className="font-sub text-sm md:text-md text-primary-400">LET'S CONNECT!</p>
                 <p className="font-text text-sm md:text-md pt-2 pb-10">I am always interested in: &nbsp; &nbsp;</p>
                 <TypeAnimation 
