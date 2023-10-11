@@ -23,26 +23,29 @@ const Contact = () => {
                 </p>
             </motion.div>
 
-            <motion.div 
+            <div 
                 className="flex flex-col xl:flex-row px-[8%] mt-4 space-y-4 xl:space-y-0 xl:justify-between"
-                variants={fadeIn('', 'spring', 0.8, 2.5)}
+                
             >
 
-                <div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/mobile.png')] bg-contain">
+                <motion.div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/mobile.png')] bg-contain"
+                    variants={fadeIn('right', 'spring', 0.6, 1.5)}>
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">MO-</p>
                     <p className="flex font-text text-primary-100 mx-auto text-xs md:text-base">1-647-639-7928 <br /> 1-647-367-5000</p>
                     <p className="text-md md:text-[35px] flex justify-end text-primary-100 mx-8 mb-4 border-t-[1px]">-BILE</p>
-                </div>
+                </motion.div>
 
-                <div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/email.png')] bg-contain">
+                <motion.div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/email.png')] bg-contain"
+                variants={fadeIn('', 'spring', 0.6, 1.5)}>
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">E-</p>
                     <a href="mailto:yolandahuang2004@gmail.com" target="_blank" rel="noreferrer" className="mx-auto">
                         <p className="flex font-text text-primary-100 text-xs md:text-base hover:underline hover:text-primary-300">yolandahuang2004@gmail.com</p>
                     </a>
                     <p className="text-md md:text-[35px] flex justify-end text-primary-100 mx-8 mb-4 border-t-[1px]">-MAIL</p>
-                </div>
+                </motion.div>
 
-                <div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/social.png')] bg-contain">
+                <motion.div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/social.png')] bg-contain"
+                variants={fadeIn('left', 'spring', 0.6, 1.5)}>
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">SO-</p>
                     <div className="flex flex-col">
                         <a href="https://www.linkedin.com/in/yolandahuangg/" target="_blank" rel="noreferrer" className="mx-auto">
@@ -53,9 +56,9 @@ const Contact = () => {
                         </a>
                     </div>
                     <p className="text-md md:text-[35px] flex justify-end text-primary-100 mx-8 mb-4 border-t-[1px]">-CIAL</p>
-                </div>
+                </motion.div>
 
-            </motion.div>
+            </div>
             
         </div>
     )
