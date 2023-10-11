@@ -24,8 +24,8 @@ const Contact = () => {
             </motion.div>
 
             <motion.div 
-                className="flex flex-col xl:flex-row px-[8%] space-y-4 xl:space-y-0 xl:justify-between"
-                variants={fadeIn('up', 'spring', 0.6, 2.5)}
+                className="flex flex-col xl:flex-row px-[8%] mt-4 space-y-4 xl:space-y-0 xl:justify-between"
+                variants={fadeIn('', 'spring', 0.8, 2.5)}
             >
 
                 <div className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/mobile.png')] bg-contain">
