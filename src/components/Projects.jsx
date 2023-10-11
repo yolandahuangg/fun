@@ -9,12 +9,14 @@ const Projects = () => {
     return (
         <div className='relative flex flex-col w-full mx-auto'>
             
-            <motion.p variants={textVariant()} className="font-sub text-sm md:text-md text-primary-400">I ENJOY WORKING WITH:</motion.p>
+            <motion.div variants={textVariant()}>
+                <p className="font-sub text-sm md:text-md text-primary-400 pb-2">I ENJOY WORKING WITH:</p>
 
-            <marquee scrollamount="12" className="font-text font-extralight border-b-[1px] border-primary-500 text-lg bg-primary-200">
-                ⬩ Javascript ⬩ React ⬩ Node.js ⬩ Express.js ⬩ Three.js ⬩ Tailwind CSS ⬩ 
-                Typscript ⬩ Python ⬩ C/C++ ⬩ C# ⬩ Scala ⬩ Kotlin ⬩ SQL ⬩ HTML ⬩ OpenCV ⬩ Unity ⬩ Figma ⬩
-            </marquee>
+                <p className="font-text font-extralight border-b-[1px] border-primary-500 text-base md:text-md xl:text-lg bg-primary-200">
+                    ⬩ Javascript ⬩ React ⬩ Node.js ⬩ Express.js ⬩ Three.js ⬩ Tailwind CSS ⬩ 
+                    Python ⬩ C/C++ ⬩ C# ⬩ Scala ⬩ Kotlin ⬩ Typscript ⬩ SQL ⬩ MongoDB ⬩ HTML ⬩ OpenCV ⬩ Unity ⬩ Figma ⬩
+                </p>
+            </motion.div>
 
             <div className="flex flex-col xl:flex-row justify-between mt-6 md:mt-10 space-y-6 md:space-y-10 xl:space-y-0">
 
