@@ -26,7 +26,7 @@ const Contact = () => {
             <div className="flex flex-col xl:flex-row px-[8%] mt-4 space-y-4 xl:space-y-0 xl:justify-between">
 
                 <motion.div 
-                    className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/mobile.png')] bg-contain"
+                    className="flex flex-col justify-between w-full xl:w-[30%] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/mobile.png')] bg-contain"
                     variants={fadeIn('right', 'spring', 0.6, 1.5)}
                 >
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">MO-</p>
@@ -35,7 +35,7 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div 
-                    className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/email.png')] bg-contain"
+                    className="flex flex-col justify-between w-full xl:w-[30%] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/email.png')] bg-contain"
                     variants={fadeIn('', 'spring', 0.6, 1.5)}
                 >
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">E-</p>
@@ -46,7 +46,7 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.div 
-                    className="flex flex-col justify-between w-full xl:w-[22rem] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/social.png')] bg-contain"
+                    className="flex flex-col justify-between w-full xl:w-[30%] h-[14rem] md:h-[20rem] rounded-xl bg-[url('../src/assets/social.png')] bg-contain"
                     variants={fadeIn('left', 'spring', 0.6, 1.5)}
                 >
                     <p className="text-md md:text-[35px] text-primary-100 mx-8 mt-4 border-b-[1px]">SO-</p>

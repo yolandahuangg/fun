@@ -42,7 +42,7 @@ const Projects = () => {
             <div className="flex items-center justify-between mt-6">
                 <span className="w-[15%] h-[2px] bg-black"/>
                 <span className="text-md md:text-lg w-fit">❤ ☕︎ ☕︎ ☕︎ ❤</span>
-                <span className="w-[40%] md:w-[50%] xl:w-[70%] h-[2px] bg-black"/>
+                <span className="w-[40%] md:w-[50%] xl:w-[67%] h-[2px] bg-black"/>
             </div>
 
         </div>
