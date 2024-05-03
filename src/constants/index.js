@@ -9,6 +9,7 @@ import linkedin2 from '../assets/linkedin2.svg';
 import gh from '../assets/gh.jpeg';
 import orbital from '../assets/orbital.jpeg';
 import ura from '../assets/ura.png';
+import managemate from '../assets/managemate.jpeg';
 
 const navLinks = [
     {
@@ -94,11 +95,23 @@ const about = [
 
 const experiences = [
   {
+    title: "Web Developer",
+    company: "Managemate",
+    icon: managemate,
+    iconBg: '#ffffff',
+    date: "January 2024 - April 2024",
+    link: "https://www.managemate.ca/",
+    points: [
+      "Constructed new responsive access menus and email automations on the company's SAAS platform.",
+      "Expanded the PostgreSQL database on AWS to provide custom taging for activities and assets.",
+    ],
+  },
+  {
     title: "University Research Assistant",
     company: "Social and Intelligent Robotics Research Lab",
     icon: ura,
     iconBg: '#ffffff',
-    date: "September 2023 - Current",
+    date: "September 2023 - December 2023",
     link: "https://uwaterloo.ca/social-intelligent-robotics-research-lab/",
     points: [
       "Researching social robots for human-computer interaction under Professor Kerstin Dautenhahn",
