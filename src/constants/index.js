@@ -103,7 +103,7 @@ const experiences = [
     link: "https://www.managemate.ca/",
     points: [
       "Constructed new responsive access menus and email automations on the company's SAAS platform.",
-      "Expanded the PostgreSQL database on AWS to provide custom taging for activities and assets.",
+      "Expanded the PostgreSQL database on AWS to provide custom tagging for activities and assets.",
     ],
   },
   {
