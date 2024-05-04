@@ -66,7 +66,7 @@ const about = [
     num: "☕︎ 01. ☕︎",
     info: [
       "Hello, my name is Yolanda.",
-      "I am a 2A Software Engineering student at the University of Waterloo.",
+      "I am a 2B Software Engineering student at the University of Waterloo.",
       "GPA 3.9 / 4.0",
     ],
   },

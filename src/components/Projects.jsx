@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import Wrapper from './SectionWrap';
 import { fadeIn, textVariant } from '../constants/motion';
-import resume from '../assets/Resume2023.pdf';
+import resume from '../assets/Resume2024.pdf';
 
 const Projects = () => {
     return (
@@ -14,7 +14,7 @@ const Projects = () => {
 
                 <p className="font-text font-extralight border-b-[1px] border-primary-500 text-base md:text-md xl:text-lg bg-primary-200">
                     ⬩ Javascript ⬩ React ⬩ Node.js ⬩ Express.js ⬩ Three.js ⬩ Tailwind CSS ⬩ 
-                    Python ⬩ C/C++ ⬩ C# ⬩ Scala ⬩ Kotlin ⬩ Typscript ⬩ SQL ⬩ MongoDB ⬩ HTML ⬩ OpenCV ⬩ Unity ⬩ Figma ⬩
+                    Python ⬩ C/C++ ⬩ C# ⬩ Scala ⬩ Typscript ⬩ SQL ⬩ AWS ⬩ MongoDB ⬩ HTML ⬩ OpenCV ⬩ Unity ⬩ Figma ⬩
                 </p>
             </motion.div>
 
